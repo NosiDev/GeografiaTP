@@ -1,10 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Sustitución de Importaciones (ISI) en Argentina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-$END$
+<body class="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">MODELO ISI</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="#timeline" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Linea de Tiempo</a>
+                    <a href="#characteristics" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Caracteristicas</a>
+                    <a href="#impact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Impacto</a>
+                    <a href="#pros-cons" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Pros & Contras</a>
+                    <a href="#provincial-impact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Mapa</a>
+                    <a href="#key-players" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Actores Claves</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                Modelo de Sustitución de Importaciones
+            </h1>
+            <p class="mt-6 text-xl max-w-3xl">
+                Descubre cómo el ISI transformó la economía argentina y latinoamericana
+                en el siglo XX, impulsando la industrialización y reduciendo la dependencia externa.
+            </p>
+        </div>
+    </div>
+
+    <section id="timeline" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Línea de Tiempo del ISI</h2>
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <button id="prevPhase" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Anterior
+                        </button>
+                        <button id="nextPhase" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Siguiente
+                        </button>
+                    </div>
+                    <div id="phaseContent">
+                       <!-- Dynamic Content -->
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-4">
+                <div class="w-1/4 h-2 bg-blue-500"></div>
+                <div class="w-1/4 h-2 bg-gray-300"></div>
+                <div class="w-1/4 h-2 bg-gray-300"></div>
+                <div class="w-1/4 h-2 bg-gray-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="characteristics" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Características del ISI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">Proteccionismo</h3>
+                        <p class="mt-2 text-sm text-gray-500">Medidas como aranceles y barreras comerciales para proteger la industria nacional.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">Industrialización</h3>
+                        <p class="mt-2 text-sm text-gray-500">Fomento de la producción nacional de bienes y servicios.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">Intervención estatal</h3>
+                        <p class="mt-2 text-sm text-gray-500">El Estado juega un papel activo en la economía, regulando y dirigiendo la producción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Impacto del ISI en Argentina</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">Crecimiento del PIB (1940-1970)</span>
+                            <span class="text-sm font-medium text-gray-700">74%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 74%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">Aumento de la producción industrial (1935-1974)</span>
+                            <span class="text-sm font-medium text-gray-700">650%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">Reducción de importaciones (%)</span>
+                            <span class="text-sm font-medium text-gray-700">40%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-lg text-gray-700">
+                        El Modelo de Sustitución de Importaciones tuvo un impacto significativo en la economía argentina.
+                        Durante su implementación, se observó un crecimiento considerable del PIB y un aumento
+                        sustancial en la producción industrial. Además, logró reducir la dependencia de las
+                        importaciones, aunque esto también trajo consigo algunos desafíos a largo plazo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="provincial-impact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Impacto del ISI por Provincia</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div id="map-container" class="col-span-2 bg-white p-4 rounded-lg shadow">
+                    <div id="argentina-map" class="w-full h-[600px] relative bg-blue-100 rounded-lg overflow-hidden">
+                    </div>
+                </div>
+                <div id="province-info" class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-2xl font-semibold mb-4">Selecciona una provincia</h3>
+                    <p id="province-description" class="text-gray-600">Haz clic en una provincia en el mapa para ver información sobre el impacto del ISI.</p>
+                    <div id="impact-legend" class="mt-8">
+                        <h4 class="text-lg font-semibold mb-2">Leyenda</h4>
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 rounded-full bg-green-400 mr-2"></div>
+                            <span>Impacto Positivo</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 rounded-full bg-yellow-400 mr-2"></div>
+                            <span>Impacto Mixto</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 rounded-full bg-red-400 mr-2"></div>
+                            <span>Impacto Negativo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pros-cons" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Ventajas y Desventajas del ISI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-green-600 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            Ventajas
+                        </h3>
+                        <ul class="mt-3 list-disc list-inside text-sm text-gray-600">
+                            <li>Fomento de la industria nacional</li>
+                            <li>Reducción de la dependencia externa</li>
+                            <li>Aumento del empleo en el sector industrial</li>
+                            <li>Desarrollo de capacidades tecnológicas locales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-red-600 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+                            Desventajas
+                        </h3>
+                        <ul class="mt-3 list-disc list-inside text-sm text-gray-600">
+                            <li>Ineficiencia en la producción</li>
+                            <li>Altos costos para los consumidores</li>
+                            <li>Falta de competitividad internacional</li>
+                            <li>Dependencia excesiva del Estado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="key-players" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Actores Clave del ISI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6 flex items-center space-x-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://via.placeholder.com/100" alt="Juan Domingo Perón">
+                        </div>
+                        <div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Juan Domingo Perón</h3>
+                            <p class="text-sm text-gray-500">Presidente de Argentina (1946-1955, 1973-1974)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6 flex items-center space-x-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://via.placeholder.com/100" alt="Raúl Prebisch">
+                        </div>
+                        <div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Raúl Prebisch</h3>
+                            <p class="text-sm text-gray-500">Economista, Secretario Ejecutivo de la CEPAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6 flex items-center space-x-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://via.placeholder.com/100" alt="Arturo Frondizi">
+                        </div>
+                        <div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Arturo Frondizi</h3>
+                            <p class="text-sm text-gray-500">Presidente de Argentina (1958-1962)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    const provincialData = {
+        'Buenos Aires': {
+            impact: 'positive',
+            description: 'Se benefició significativamente debido a la concentración de industrias.',
+            details: 'Buenos Aires, siendo el centro económico del país, atrajo la mayor parte de las inversiones industriales. Su infraestructura preexistente, acceso a puertos y gran mercado interno la convirtieron en el epicentro del ISI.'
+        },
+        'Córdoba': {
+            impact: 'positive',
+            description: 'Experimentó un crecimiento industrial, especialmente en el sector automotriz.',
+            details: 'Córdoba se benefició de la política de descentralización industrial. La instalación de fábricas automotrices como IKA-Renault impulsó su economía y creó un cluster industrial.'
+        },
+        'Santa Fe': {
+            impact: 'positive',
+            description: 'Se benefició del desarrollo de la industria metalúrgica y agroindustrial.',
+            details: 'Santa Fe aprovechó su ubicación estratégica y su tradición agrícola para desarrollar una fuerte industria agroindustrial y metalúrgica, complementando la producción de Buenos Aires.'
+        },
+        'Mendoza': {
+            impact: 'mixed',
+            description: 'Tuvo un impacto mixto, con crecimiento en algunas industrias pero desafíos en otras.',
+            details: 'Mendoza experimentó un crecimiento en su industria vitivinícola y algunas manufacturas, pero enfrentó desafíos debido a su distancia de los principales centros de consumo.'
+        },
+        'Tucumán': {
+            impact: 'negative',
+            description: 'Enfrentó dificultades debido a la crisis de la industria azucarera.',
+            details: 'Tucumán, dependiente de la industria azucarera, sufrió cuando esta entró en crisis. La falta de diversificación industrial agravó el impacto negativo del ISI en la provincia.'
+        },
+        'Chaco': {
+            impact: 'negative',
+            description: 'Sufrió por la falta de diversificación industrial y la dependencia de la agricultura.',
+            details: 'Chaco, con una economía basada en la producción de algodón, no logró desarrollar una base industrial significativa, quedando rezagada en el proceso de industrialización.'
+        },
+        'Misiones': {
+            impact: 'mixed',
+            description: 'Experimentó crecimiento en algunas industrias locales, pero enfrentó desafíos en otras.',
+            details: 'Misiones vio cierto desarrollo en industrias relacionadas con la yerba mate y la madera, pero su ubicación periférica limitó un desarrollo industrial más amplio.'
+        },
+        'Entre Ríos': {
+            impact: 'mixed',
+            description: 'Tuvo un desarrollo industrial moderado, con algunos sectores beneficiados y otros no.',
+            details: 'Entre Ríos se benefició parcialmente del ISI en industrias relacionadas con la agricultura y la ganadería, pero no logró un desarrollo industrial tan significativo como otras provincias.'
+        },
+        'Salta': {
+            impact: 'negative',
+            description: 'Enfrentó dificultades debido a su distancia de los principales centros industriales.',
+            details: 'Salta, al igual que otras provincias del norte, quedó marginada del proceso de industrialización debido a su lejanía de los centros de producción y consumo del centro del país.'
+        },
+        'Jujuy': {
+            impact: 'negative',
+            description: 'Experimentó desafíos similares a Salta, con limitado desarrollo industrial.',
+            details: 'Jujuy enfrentó obstáculos similares a Salta, con dificultades para atraer inversiones industriales significativas debido a su ubicación geográfica y falta de infraestructura.'
+        },
+    };
+
+    function createImprovedMap() {
+        const mapContainer = document.getElementById('argentina-map');
+        const provinces = Object.keys(provincialData);
+        const totalProvinces = provinces.length;
+
+        provinces.forEach((province, index) => {
+            const angle = (index / totalProvinces) * 2 * Math.PI;
+            const radius = 40; // Porcentaje del radio del círculo
+
+            const provinceElement = document.createElement('div');
+            provinceElement.className = 'absolute w-24 h-24 rounded-full cursor-pointer transition-all duration-300 hover:scale-110 hover:z-10 flex items-center justify-center shadow-lg';
+            provinceElement.style.backgroundColor = getProvinceColor(provincialData[province].impact);
+            provinceElement.style.left = `${50 + radius * Math.cos(angle)}%`;
+            provinceElement.style.top = `${50 + radius * Math.sin(angle)}%`;
+            provinceElement.style.transform = 'translate(-50%, -50%)';
+            provinceElement.title = province;
+            provinceElement.addEventListener('click', () => updateProvinceInfo(province));
+
+            const provinceLabel = document.createElement('div');
+            provinceLabel.className = 'text-xs font-bold text-center text-gray-800 p-2';
+            provinceLabel.textContent = province;
+
+            provinceElement.appendChild(provinceLabel);
+            mapContainer.appendChild(provinceElement);
+        });
+    }
+
+    function getProvinceColor(impact) {
+        switch (impact) {
+            case 'positive': return '#34D399';
+            case 'negative': return '#F87171';
+            default: return '#FBBF24';
+        }
+    }
+
+    function updateProvinceInfo(provinceName) {
+        const info = provincialData[provinceName];
+        const infoElement = document.getElementById('province-info');
+        if (info) {
+            infoElement.innerHTML = `
+            <h3 class="text-2xl font-semibold mb-4">${provinceName}</h3>
+            <p class="text-gray-600 mb-4">${info.description}</p>
+            <h4 class="text-lg font-semibold mb-2">Detalles del Impacto:</h4>
+            <p class="text-gray-600">${info.details}</p>
+        `;
+        } else {
+            infoElement.innerHTML = `
+            <h3 class="text-2xl font-semibold mb-4">${provinceName}</h3>
+            <p class="text-gray-600">No hay información disponible para esta provincia.</p>
+        `;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', createImprovedMap);
+</script>
+
+<script>
+    const phases = [
+        { year: "1940-1955", title: "Implementación", icon: "🏭", description: "Gobierno de Juan Domingo Perón implementa políticas de sustitución de importaciones." },
+        { year: "1955-1966", title: "Auge", icon: "🛡️", description: "Intensificación del ISI con proteccionismo y subsidios a la industria." },
+        { year: "1966-1976", title: "Declive", icon: "📉", description: "Crisis económica y inestabilidad política llevan al declive del ISI." },
+        { year: "1976-1990", title: "Fin", icon: "💰", description: "Reemplazo por políticas de liberalización económica y apertura comercial." },
+    ];
+
+    let currentPhase = 0;
+
+    function updatePhaseContent() {
+        const phase = phases[currentPhase];
+        document.getElementById('phaseContent').innerHTML = `
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <span class="text-2xl">${phase.icon}</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">${phase.title}</h3>
+                        <p class="text-sm text-gray-500">${phase.year}</p>
+                    </div>
+                </div>
+                <p>${phase.description}</p>
+            `;
+
+        const progressBars = document.querySelectorAll('#timeline .flex > div');
+        progressBars.forEach((bar, index) => {
+            if (index <= currentPhase) {
+                bar.classList.remove('bg-gray-300');
+                bar.classList.add('bg-blue-500');
+            } else {
+                bar.classList.remove('bg-blue-500');
+                bar.classList.add('bg-gray-300');
+            }
+        });
+    }
+
+    document.getElementById('prevPhase').addEventListener('click', () => {
+        currentPhase = (currentPhase - 1 + phases.length) % phases.length;
+        updatePhaseContent();
+    });
+
+    document.getElementById('nextPhase').addEventListener('click', () => {
+        currentPhase = (currentPhase + 1) % phases.length;
+        updatePhaseContent();
+    });
+
+    updatePhaseContent();
+</script>
 </body>
 </html>
